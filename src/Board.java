@@ -13,7 +13,7 @@ public class Board {
 	public Board() {
 		
 	 //TODO: initialise the cells array using ROWS and COLS constants 
-		//ONE MORE TEST
+		//FINAL TEST BEFORE BEGINNING
 
 		
 		for (int row = 0; row < GameMain.ROWS; ++row) {
