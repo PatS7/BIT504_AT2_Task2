@@ -54,12 +54,19 @@ public class Board {
 		
 		
 		
-		 // 3-in-the-diagonal
-		if( cells[0][0].content == thePlayer && cells[1][1].content == thePlayer && cells[2][2].content == thePlayer)
+		 // 3-in-the-diagonal (top left to bottom right)
+		if( cells[0][0].content == thePlayer && 
+				cells[1][1].content == thePlayer && 
+				cells[2][2].content == thePlayer)
 			return true;
 		 
 		
-		// TODO: Check the diagonal in the other direction
+		
+		//3 in a diagonal in the opposite direction (top right to bottom left)
+		if( cells[0][2].content == thePlayer && 
+	            cells[1][1].content == thePlayer && 
+	            cells[2][0].content == thePlayer)
+	            return true;
 		
 
 		
