@@ -49,9 +49,9 @@ public class Board {
 		 //check if player has won with with 3 in a column
 		
 		if (cells[0][playerCol].content == thePlayer && 
-	            cells[1][playerCol].content == thePlayer && 
-	            cells[2][playerCol].content == thePlayer)
-	            return true;
+	        cells[1][playerCol].content == thePlayer && 
+	        cells[2][playerCol].content == thePlayer)
+	        return true;
 		
 		
 		 // 3-in-the-diagonal (top left to bottom right)
