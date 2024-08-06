@@ -12,9 +12,8 @@ public class Board {
 	/** Constructor to create the game board */
 	public Board() {
 		
-	 //TODO: initialise the cells array using ROWS and COLS constants 
-		//FINAL TEST BEFORE BEGINNING
-
+	 	//New array using constants COLS and ROWS
+		cells = new Cell[GameMain.ROWS][GameMain.COLS];
 		
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
