@@ -40,6 +40,7 @@ public class GameMain extends JPanel implements MouseListener{
 	
 
 	/** Constructor to setup the UI and game components on the panel */
+		
 	public GameMain() {   
 		
 		//MouseListener for JPanel
@@ -66,6 +67,8 @@ public class GameMain extends JPanel implements MouseListener{
 		initGame();
 
 	}
+	
+	/* The entry main method to run the game */
 	
 	public static void main(String[] args) {
 		    // Run GUI code in Event Dispatch thread for thread safety.
@@ -122,7 +125,8 @@ public class GameMain extends JPanel implements MouseListener{
 		}
 		
 	
-	  /** Initialise the game-board contents and the current status of GameState and Player) */
+	  /** Sets up the initial game state and display */
+		
 		public void initGame() {
 			for (int row = 0; row < ROWS; ++row) {          
 				for (int col = 0; col < COLS; ++col) {  
