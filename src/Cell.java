@@ -9,18 +9,19 @@ public class Cell {
 	//row and column of this cell
 	int row, col;
 	
-	/** Constructor to initialise this cell with the specified row and col */
+	/** Constructor to set the row and column and initialise the cell as empty. */
 	public Cell(int row, int col) {
 		
 		this.row = row;
 		this.col = col;
 		
-		//method to set cell content to EMPTY		
-		clear();
+		clear(); //call method to clear the board
 	}
 	
 
 	/** Paint itself on the graphics canvas, given the Graphics context g */ 
+	//Draw a cross or nought on the board
+	
 	public void paint(Graphics g) {
 		//Graphics2D allows setting of pen's stroke size
 		Graphics2D graphic2D = (Graphics2D) g;
@@ -41,7 +42,7 @@ public class Cell {
 		}
 	}
 	
-	/** Set this cell's content to EMPTY */
+	/** Set this cell's content to EMPTY - clears the board */
 	public void clear() {
 				
 		this.content = Player.Empty;
