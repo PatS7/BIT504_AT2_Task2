@@ -9,7 +9,7 @@ public class Board {
 	//2D array of ROWS-by-COLS Cell instances
 	Cell [][] cells;
 	
-	/** Constructor to create the game board */
+	/** Constructor to create the game board and set it up with cell components */
 	public Board() {
 		
 	 	//New array using constants COLS and ROWS
@@ -25,6 +25,7 @@ public class Board {
 
 	 /** Return true if it is a draw (i.e., no more EMPTY cells) */ 
 	//Loop to check if game result is a draw
+	//Checks if each cell is empty
 	public boolean isDraw() {
 		 
 		for (int row = 0; row < GameMain.ROWS; ++row) {
@@ -39,6 +40,8 @@ public class Board {
 	}
 	
 	/** Return true if the current player "thePlayer" has won after making their move  */
+	//All cells are checked for a win condition
+	
 	public boolean hasWon(Player thePlayer, int playerRow, int playerCol) {
 		 // check if player has 3-in-that-row
 		if(cells[playerRow][0].content == thePlayer 
